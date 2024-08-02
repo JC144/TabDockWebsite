@@ -16,8 +16,8 @@
 <body>
     <header>
         <h1 class="roboto-black">Tab Dock</h1>
-        <p class="roboto-medium">The ultimate productivity tool for managing your browser tabs efficiently!</p>
-        <a href="" class="btn" disabled>Soon on your favorite browser</a>
+        <p class="roboto-medium" style="margin-bottom: 48px;">The ultimate productivity tool for managing your browser tabs efficiently!</p>
+        <button id="installButton_header" class="btn install">Get Tab Dock</button>
     </header>
     <main>
         <section id="demo">
@@ -41,7 +41,7 @@
                     <br />
                 </p>
                 <p class="description" style="text-align: center;">
-                    That's why we created <strong>Tab Dock.</strong><br/><br/>
+                    That's why we created <strong>Tab Dock.</strong><br /><br />
                     <strong>To bring a dock to your Web Browser.</strong>
                 </p>
             </div>
@@ -78,7 +78,7 @@
         </section>
         <section id="get-started">
             <div class="install-buttons">
-                <a href="" class="btn" disabled>Soon on your favorite browser</a>
+                <button id="installButton_bottom" class="btn install">Get Tab Dock</button>
             </div>
         </section>
     </main>
@@ -90,6 +90,58 @@
             <a class="btn" href="https://www.paypal.com/donate/?hosted_button_id=XC7MKUJ7V94QY">Give a tip!</a>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const installButton1 = document.getElementById('installButton_header');
+            const installButton2 = document.getElementById('installButton_bottom');
+
+            function getBrowser() {
+                const userAgent = navigator.userAgent;
+                if (userAgent.includes("Firefox")) return "Firefox";
+                if (userAgent.includes("Edg")) return "Edge";
+                if (userAgent.includes("Chrome")) {
+                    if (userAgent.includes("Brave")) return "Brave";
+                    return "Chrome";
+                }
+                return "Unsupported";
+            }
+
+            function getStoreURL(browser) {
+                switch (browser) {
+                    case "Firefox":
+                        return "https://addons.mozilla.org/en-US/firefox/addon/tab-dock/";
+                    case "Chrome":
+                    case "Brave":
+                        return "https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc";
+                    case "Edge":
+                        return "https://microsoftedge.microsoft.com/addons/detail/tab-dock/0RDCKFQKWK3Z";
+                    default:
+                        return "#";
+                }
+            }
+
+            function setInstallButton(browser, storeURL, button) {
+                if (browser === "Unsupported") {
+                    button.textContent = "Browser not supported";
+                    button.disabled = true;
+                } else {
+                    button.textContent = `Install for ${browser}`;
+                    button.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        window.open(storeURL, '_blank');
+                    });
+                }
+            }
+
+            const browser = getBrowser();
+            const storeURL = getStoreURL(browser);
+            setInstallButton(browser,storeURL, installButton1);
+            setInstallButton(browser,storeURL, installButton2);
+
+
+        });
+    </script>
 </body>
 
 </html>
