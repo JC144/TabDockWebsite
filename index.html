@@ -16,7 +16,8 @@
 <body>
     <header>
         <h1 class="roboto-black">Tab Dock</h1>
-        <p class="roboto-medium" style="margin-bottom: 48px;">The ultimate productivity tool for managing your browser tabs efficiently!</p>
+        <p class="roboto-medium" style="margin-bottom: 48px;">The ultimate productivity tool for managing your browser
+            tabs efficiently!</p>
         <button id="installButton_header" class="btn install">Get Tab Dock</button>
     </header>
     <main>
@@ -113,9 +114,8 @@
                         return "https://addons.mozilla.org/en-US/firefox/addon/tab-dock/";
                     case "Chrome":
                     case "Brave":
-                        return "https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc";
                     case "Edge":
-                        return "https://microsoftedge.microsoft.com/addons/detail/tab-dock/0RDCKFQKWK3Z";
+                        return "https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc";
                     default:
                         return "#";
                 }
@@ -136,8 +136,8 @@
 
             const browser = getBrowser();
             const storeURL = getStoreURL(browser);
-            setInstallButton(browser,storeURL, installButton1);
-            setInstallButton(browser,storeURL, installButton2);
+            setInstallButton(browser, storeURL, installButton1);
+            setInstallButton(browser, storeURL, installButton2);
 
 
         });
