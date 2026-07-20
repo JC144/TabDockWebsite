@@ -1,0 +1,19 @@
+# Tab Dock
+
+> Tab Dock is a free, open-source browser extension for Chrome, Edge, Brave, and Firefox
+> that groups your open tabs by website into a macOS-style dock at the bottom of the
+> browser window, so you can find and switch tabs instantly.
+
+## Key facts
+
+- Developer: Jean-Christophe VASSELON (https://github.com/JC144)
+- Price: Free, open source
+- Platforms: Chrome, Edge, Brave, Firefox
+- Privacy: No tracking; all data stays on-device
+
+## Pages
+
+- [Official website](https://jc.vasselon.com/TabDockWebsite/): overview, features, how it works, install links
+- [Source code](https://github.com/JC144/TabDockExtension): README and releases
+- [Chrome Web Store listing](https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc): install for Chrome, Edge, Brave
+- [Firefox Add-on listing](https://addons.mozilla.org/en-US/firefox/addon/tab-dock/): install for Firefox

@@ -4,54 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tab Dock - Chrome Extension</title>
+    <title>Tab Dock – Free Tab Manager Extension (Chrome, Firefox, Edge)</title>
+    <link rel="canonical" href="https://jc.vasselon.com/TabDockWebsite/">
 
     <!-- Favicon settings -->
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48x48.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    
+
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Tab Dock - Efficient Browser Tab Management">
-    <meta name="description" content="Boost your productivity with Tab Dock - The ultimate productivity tool for managing your browser tabs efficiently!">
-    <meta name="keywords" content="tab management, browser extension, productivity tool, chrome extension, firefox addon">
+    <meta name="title" content="Tab Dock – Free Tab Manager Extension (Chrome, Firefox, Edge)">
+    <meta name="description"
+        content="Tab Dock is a free, open-source extension that groups your open tabs into a macOS-style dock by website. Works in Chrome, Firefox, Edge &amp; Brave.">
     <meta name="author" content="Jean-Christophe VASSELON">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jc.vasselon.com/TabDockWebsite/">
-    <meta property="og:title" content="Tab Dock - Efficient Browser Tab Management">
-    <meta property="og:description" content="Boost your productivity with Tab Dock - The ultimate productivity tool for managing your browser tabs efficiently!">
+    <meta property="og:title" content="Tab Dock – Free Tab Manager Extension (Chrome, Firefox, Edge)">
+    <meta property="og:description"
+        content="Tab Dock is a free, open-source extension that groups your open tabs into a macOS-style dock by website. Works in Chrome, Firefox, Edge &amp; Brave.">
     <meta property="og:image" content="https://jc.vasselon.com/TabDockWebsite/img/social-preview.png">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://jc.vasselon.com/TabDockWebsite/">
-    <meta property="twitter:title" content="Tab Dock - Efficient Browser Tab Management">
-    <meta property="twitter:description" content="Boost your productivity with Tab Dock - The ultimate productivity tool for managing your browser tabs efficiently!">
+    <meta property="twitter:title" content="Tab Dock – Free Tab Manager Extension (Chrome, Firefox, Edge)">
+    <meta property="twitter:description"
+        content="Tab Dock is a free, open-source extension that groups your open tabs into a macOS-style dock by website. Works in Chrome, Firefox, Edge &amp; Brave.">
     <meta property="twitter:image" content="https://jc.vasselon.com/TabDockWebsite/img/social-preview.png">
     <meta name="twitter:creator" content="@jcvasselon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://jc.vasselon.com/TabDockWebsite/#author",
+          "name": "Jean-Christophe VASSELON",
+          "url": "https://twitter.com/jcvasselon/",
+          "sameAs": [
+            "https://twitter.com/jcvasselon/",
+            "https://github.com/JC144"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jc.vasselon.com/TabDockWebsite/#website",
+          "url": "https://jc.vasselon.com/TabDockWebsite/",
+          "name": "Tab Dock",
+          "description": "Tab Dock is a free, open-source browser extension that groups your open tabs by website into a macOS-style dock, available for Chrome, Firefox, Edge, and Brave.",
+          "publisher": { "@id": "https://jc.vasselon.com/TabDockWebsite/#author" },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://jc.vasselon.com/TabDockWebsite/#webpage",
+          "url": "https://jc.vasselon.com/TabDockWebsite/",
+          "name": "Tab Dock – Free Tab Manager Extension (Chrome, Firefox, Edge)",
+          "description": "Tab Dock is a free, open-source browser extension that groups your open tabs by website into a macOS-style dock, available for Chrome, Firefox, Edge, and Brave.",
+          "isPartOf": { "@id": "https://jc.vasselon.com/TabDockWebsite/#website" },
+          "about": { "@id": "https://jc.vasselon.com/TabDockWebsite/#software" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://jc.vasselon.com/TabDockWebsite/img/social-preview.png"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://jc.vasselon.com/TabDockWebsite/#software",
+          "name": "Tab Dock",
+          "description": "Tab Dock is a free, open-source browser extension that groups your open tabs by website into a macOS-style dock at the bottom of the window, so you can navigate, find, and close tabs instantly. No tracking, everything stays on your computer.",
+          "url": "https://jc.vasselon.com/TabDockWebsite/",
+          "image": "https://jc.vasselon.com/TabDockWebsite/img/social-preview.png",
+          "applicationCategory": "BrowserApplication",
+          "applicationSubCategory": "Tab Manager",
+          "operatingSystem": "Chrome, Firefox, Edge, Brave",
+          "browserRequirements": "Requires a Chromium-based browser (Chrome, Edge, Brave) or Firefox",
+          "author": { "@id": "https://jc.vasselon.com/TabDockWebsite/#author" },
+          "creator": { "@id": "https://jc.vasselon.com/TabDockWebsite/#author" },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "installUrl": [
+            "https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc",
+            "https://addons.mozilla.org/en-US/firefox/addon/tab-dock/"
+          ],
+          "downloadUrl": [
+            "https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc",
+            "https://addons.mozilla.org/en-US/firefox/addon/tab-dock/"
+          ],
+          "sameAs": [
+            "https://github.com/JC144/TabDockExtension",
+            "https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc",
+            "https://addons.mozilla.org/en-US/firefox/addon/tab-dock/"
+          ],
+          "isAccessibleForFree": true
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
     <header>
         <h1 class="roboto-black">Tab Dock</h1>
-        <p class="roboto-medium" style="margin-bottom: 48px;">The ultimate productivity tool for managing your browser
-            tabs efficiently!</p>
-        <button id="installButton_header" class="btn install">Get Tab Dock</button>
+        <p class="roboto-medium" style="margin-bottom: 48px;">Tab Dock is a free, open-source browser extension that
+            groups your open tabs by website into a macOS-style dock, available for Chrome, Firefox, Edge, and Brave.
+        </p>
+        <a id="installButton_header" class="btn install"
+            href="https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc" target="_blank"
+            rel="noopener">Get Tab Dock</a>
     </header>
     <main>
         <section id="demo">
             <div class="demo">
-                <img class="container" src="./Webdock3.gif" alt="Tabdock demonstration" />
+                <video autoplay loop muted playsinline width="800" height="240">
+                    <source src="img/Dock.webm" type="video/webm">
+                    <source src="img/Dock.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
         <section id="overview">
@@ -82,7 +167,7 @@
                     <li><strong>Dynamic Tab Dock:</strong> Group all your tabs from the same Web Application at the
                         bottom of your browser window. </li>
                     <li><strong>Easy Navigation:</strong> Click on any tab in the dock to instantly switch to it,
-                        quickly check your openned tab and remove the ones you don't need anymore.</li>
+                        quickly check your opened tab and remove the ones you don't need anymore.</li>
                     <li><strong>Smooth Animations:</strong> Experience delightful animations. The web doesn't have to be
                         rigid.</li>
                     <li><strong>Open Source:</strong> All code is open-source, feel free to bring your ideas and
@@ -107,14 +192,26 @@
         </section>
         <section id="get-started">
             <div class="install-buttons">
-                <button id="installButton_bottom" class="btn install">Get Tab Dock</button>
+                <a id="installButton_bottom" class="btn install"
+                    href="https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc"
+                    target="_blank" rel="noopener">Get Tab Dock</a>
             </div>
+            <p class="store-links">Available on the <a
+                    href="https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc"
+                    target="_blank" rel="noopener">Chrome Web Store</a> (Chrome, Edge, Brave) and <a
+                    href="https://addons.mozilla.org/en-US/firefox/addon/tab-dock/" target="_blank"
+                    rel="noopener">Firefox Add-ons</a>.</p>
+            <p class="store-links">Featured on <a href="https://www.producthunt.com/products/tab-dock" target="_blank"
+                    rel="noopener">Product Hunt</a> and <a href="https://tab-dock.en.softonic.com/chrome/extension"
+                    target="_blank" rel="noopener">Softonic</a>.</p>
         </section>
     </main>
     <footer>
         <div>
             <p>Build with love by <a href="https://twitter.com/jcvasselon/">Jean-Christophe VASSELON</a></p>
             <p>Code available on <a href="https://github.com/JC144/TabDockExtension">Github</a></p>
+            <p id="version-info">Latest release: <a
+                    href="https://github.com/JC144/TabDockExtension/releases">v2.1</a></p>
             <p>If you like my products, I like good coffee, you can contribute with a nice tip!</p>
             <a class="btn" href="https://www.paypal.com/donate/?hosted_button_id=XC7MKUJ7V94QY">Give a tip!</a>
         </div>
@@ -149,17 +246,12 @@
                 }
             }
 
-            function setInstallButton(browser, storeURL, button) {
+            function setInstallButton(browser, storeURL, link) {
                 if (browser === "Unsupported") {
-                    button.textContent = "Browser not supported";
-                    button.disabled = true;
-                } else {
-                    button.textContent = `Install for ${browser}`;
-                    button.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        window.open(storeURL, '_blank');
-                    });
+                    return; // keep the default crawlable Chrome Web Store link
                 }
+                link.textContent = `Install for ${browser}`;
+                link.href = storeURL;
             }
 
             const browser = getBrowser();
@@ -167,7 +259,15 @@
             setInstallButton(browser, storeURL, installButton1);
             setInstallButton(browser, storeURL, installButton2);
 
-
+            fetch('https://api.github.com/repos/JC144/TabDockExtension/releases/latest')
+                .then(response => response.ok ? response.json() : Promise.reject())
+                .then(release => {
+                    const link = document.querySelector('#version-info a');
+                    const date = new Date(release.published_at)
+                        .toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+                    link.textContent = `${release.tag_name} · ${date}`;
+                })
+                .catch(() => { /* keep the static baseline */ });
         });
     </script>
 </body>
