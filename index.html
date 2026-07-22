@@ -30,19 +30,14 @@
     <meta property="og:image" content="https://jc.vasselon.com/TabDockWebsite/img/social-preview.png">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://jc.vasselon.com/TabDockWebsite/">
-    <meta property="twitter:title" content="Tab Dock – Free Tab Manager Extension (Chrome, Firefox, Edge)">
-    <meta property="twitter:description"
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jc.vasselon.com/TabDockWebsite/">
+    <meta name="twitter:title" content="Tab Dock – Free Tab Manager Extension (Chrome, Firefox, Edge)">
+    <meta name="twitter:description"
         content="Tab Dock is a free, open-source extension that groups your open tabs into a macOS-style dock by website. Works in Chrome, Firefox, Edge &amp; Brave.">
-    <meta property="twitter:image" content="https://jc.vasselon.com/TabDockWebsite/img/social-preview.png">
+    <meta name="twitter:image" content="https://jc.vasselon.com/TabDockWebsite/img/social-preview.png">
     <meta name="twitter:creator" content="@jcvasselon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <script type="application/ld+json">
@@ -121,99 +116,151 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="roboto-black">Tab Dock</h1>
-        <p class="roboto-medium" style="margin-bottom: 48px;">Tab Dock is a free, open-source browser extension that
-            groups your open tabs by website into a macOS-style dock, available for Chrome, Firefox, Edge, and Brave.
-        </p>
-        <a id="installButton_header" class="btn install"
-            href="https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc" target="_blank"
-            rel="noopener">Get Tab Dock</a>
-    </header>
-    <main>
-        <section id="demo">
-            <div class="demo">
-                <video autoplay loop muted playsinline width="800" height="240">
-                    <source src="img/Dock.webm" type="video/webm">
-                    <source src="img/Dock.mp4" type="video/mp4">
-                </video>
-            </div>
-        </section>
-        <section id="overview">
-            <div class="container">
-                <p class="description">
-                    In today’s digital age, <strong>everything happens in your web browser.</strong><br /><br />
-                    Whether you're reading emails, watching YouTube, relaxing with Netflix, or shopping on Amazon, the
-                    browser is your gateway to the internet.<br />
-                    <br />
-                    However, <strong>traditional tabs are inefficient.</strong> <br /><br />
-                    Have you ever lost a Google Meet tab or struggled to find that article you set aside?
-                </p>
-                <p class="description">
-                    Imagine trying to work without a dock or taskbar on your favorite operating system.<br />
-                    It would be chaotic and disorganized.<br />
-                    <br />
-                </p>
-                <p class="description" style="text-align: center;">
-                    That's why we created <strong>Tab Dock.</strong><br /><br />
-                    <strong>To bring a dock to your Web Browser.</strong>
-                </p>
-            </div>
-        </section>
-        <section id="features">
-            <div class="container">
-                <h2>FEATURES</h2>
-                <ul class="description">
-                    <li><strong>Dynamic Tab Dock:</strong> Group all your tabs from the same Web Application at the
-                        bottom of your browser window. </li>
-                    <li><strong>Easy Navigation:</strong> Click on any tab in the dock to instantly switch to it,
-                        quickly check your opened tab and remove the ones you don't need anymore.</li>
-                    <li><strong>Smooth Animations:</strong> Experience delightful animations. The web doesn't have to be
-                        rigid.</li>
-                    <li><strong>Open Source:</strong> All code is open-source, feel free to bring your ideas and
-                        improvements.</li>
-                    <li><strong>No tracking:</strong> Everything stays on your computer.</li>
-                </ul>
-            </div>
-        </section>
-        <section id="howitworks">
-            <div class="container">
-                <h2>HOW IT WORKS</h2>
-                <ul class="description">
-                    <li><strong>Hover to Expand:</strong> Move your mouse to the bottom of the window to reveal the
-                        dock.</li>
-                    <li><strong>Group and Navigate:</strong> Icons in the dock represent different web applications.
-                        Hover over an icon to view all open tabs from that web application, then click to switch to the
-                        desired tab.</li>
-                    <li><strong>Seamless Integration:</strong> The dock is automatically injected into each website you
-                        visit, ensuring a consistent and integrated experience.</li>
-                </ul>
-            </div>
-        </section>
-        <section id="get-started">
-            <div class="install-buttons">
-                <a id="installButton_bottom" class="btn install"
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">Tab Dock</a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how" class="nav-link">How it works</a>
+                <a href="https://github.com/JC144/TabDockExtension" class="nav-link" target="_blank"
+                    rel="noopener">GitHub</a>
+                <a id="installButton_header" class="btn-primary btn-nav"
                     href="https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc"
                     target="_blank" rel="noopener">Get Tab Dock</a>
             </div>
-            <p class="store-links">Available on the <a
+        </div>
+    </nav>
+
+    <header class="hero">
+        <p class="hero-eyebrow">Free &amp; open source</p>
+        <h1>A dock for your browser tabs.</h1>
+        <p class="hero-subtitle">Tab Dock groups your open tabs by website into a macOS-style dock. Available for
+            Chrome, Firefox, Edge, and Brave.</p>
+        <div class="hero-actions">
+            <a id="installButton_bottom" class="btn-primary"
+                href="https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc"
+                target="_blank" rel="noopener">Get Tab Dock</a>
+            <a id="storeLink_hero" class="text-link" href="https://addons.mozilla.org/en-US/firefox/addon/tab-dock/"
+                target="_blank" rel="noopener">Firefox Add-ons &rsaquo;</a>
+        </div>
+        <div class="browser-frame">
+            <div class="browser-bar">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+            </div>
+            <video autoplay loop muted playsinline width="800" height="240">
+                <source src="img/Dock.webm" type="video/webm">
+                <source src="img/Dock.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+
+    <main>
+        <section id="overview" class="section section-alt narrative">
+            <div class="narrative-inner">
+                <h2>Everything happens in your browser. Tabs haven&rsquo;t kept up.</h2>
+                <p>Email, meetings, YouTube, Netflix, shopping — it all lives in tabs. And yet you still lose the
+                    Google&nbsp;Meet tab or the article you set aside. Working without a dock would be chaos on your
+                    desktop. Your browser deserves one too.</p>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="section-inner">
+                <h2>Features</h2>
+                <p class="section-subtitle">Everything you need to tame your tabs. Nothing you don&rsquo;t.</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-glyph">&#8984;</div>
+                        <h3>Dynamic Tab Dock</h3>
+                        <p>All tabs from the same web app are grouped at the bottom of your window, one icon per site.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-glyph">&rarr;</div>
+                        <h3>Easy navigation</h3>
+                        <p>Click any tab in the dock to switch instantly — review what&rsquo;s open and close what you
+                            don&rsquo;t need.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-glyph">~</div>
+                        <h3>Smooth animations</h3>
+                        <p>Delightful, fluid motion. The web doesn&rsquo;t have to be rigid.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-glyph">&lt;/&gt;</div>
+                        <h3>Open source</h3>
+                        <p>All the code is public. Bring your ideas and improvements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-glyph">&#9679;</div>
+                        <h3>No tracking</h3>
+                        <p>Everything stays on your computer. Nothing leaves your browser.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="section section-alt">
+            <div class="steps-inner">
+                <h2>How it works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-body">
+                            <h3>Hover to expand</h3>
+                            <p>Move your mouse to the bottom of the window to reveal the dock.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-body">
+                            <h3>Group and navigate</h3>
+                            <p>Each icon represents a web application. Hover to see its open tabs, click to switch.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-body">
+                            <h3>Seamless integration</h3>
+                            <p>The dock is injected into every site you visit, for a consistent, integrated experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="get-started" class="section cta">
+            <h2>Bring a dock to your browser.</h2>
+            <div class="cta-actions">
+                <a id="storeButton_primary" class="btn-primary"
                     href="https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc"
-                    target="_blank" rel="noopener">Chrome Web Store</a> (Chrome, Edge, Brave) and <a
-                    href="https://addons.mozilla.org/en-US/firefox/addon/tab-dock/" target="_blank"
-                    rel="noopener">Firefox Add-ons</a>.</p>
-            <p class="store-links">Featured on <a href="https://www.producthunt.com/products/tab-dock" target="_blank"
-                    rel="noopener">Product Hunt</a> and <a href="https://tab-dock.en.softonic.com/chrome/extension"
-                    target="_blank" rel="noopener">Softonic</a>.</p>
+                    target="_blank" rel="noopener">Chrome Web Store</a>
+                <a id="storeButton_secondary" class="btn-secondary"
+                    href="https://addons.mozilla.org/en-US/firefox/addon/tab-dock/"
+                    target="_blank" rel="noopener">Firefox Add-ons</a>
+            </div>
+            <p class="fine-print" id="version-info">Works with Chrome, Edge, Brave, and Firefox<br/>Latest release
+                <a href="https://github.com/JC144/TabDockExtension/releases" target="_blank" rel="noopener">v2.1</a>
+            </p>
+            <p class="tip-line">If you like Tab Dock, I like good coffee. <a
+                    href="https://www.paypal.com/donate/?hosted_button_id=XC7MKUJ7V94QY" target="_blank"
+                    rel="noopener">Give a tip &rsaquo;</a></p>
         </section>
     </main>
-    <footer>
-        <div>
-            <p>Build with love by <a href="https://twitter.com/jcvasselon/">Jean-Christophe VASSELON</a></p>
-            <p>Code available on <a href="https://github.com/JC144/TabDockExtension">Github</a></p>
-            <p id="version-info">Latest release: <a
-                    href="https://github.com/JC144/TabDockExtension/releases">v2.1</a></p>
-            <p>If you like my products, I like good coffee, you can contribute with a nice tip!</p>
-            <a class="btn" href="https://www.paypal.com/donate/?hosted_button_id=XC7MKUJ7V94QY">Give a tip!</a>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span>Built with love by <a href="https://twitter.com/jcvasselon/" target="_blank"
+                    rel="noopener">Jean-Christophe Vasselon</a></span>
+            <div class="footer-links">
+                <a href="https://github.com/JC144/TabDockExtension" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.producthunt.com/products/tab-dock" target="_blank" rel="noopener">Product Hunt</a>
+                <a href="https://tab-dock.en.softonic.com/chrome/extension" target="_blank"
+                    rel="noopener">Softonic</a>
+            </div>
         </div>
     </footer>
 
@@ -254,10 +301,42 @@
                 link.href = storeURL;
             }
 
+            const stores = {
+                Chrome: {
+                    label: "Chrome Web Store",
+                    url: "https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc"
+                },
+                Firefox: {
+                    label: "Firefox Add-ons",
+                    url: "https://addons.mozilla.org/en-US/firefox/addon/tab-dock/"
+                }
+            };
+
+            function setStoreLinks(browser) {
+                if (browser === "Unsupported") {
+                    return; // keep the default crawlable links
+                }
+                const currentStore = browser === "Firefox" ? stores.Firefox : stores.Chrome;
+                const otherStore = browser === "Firefox" ? stores.Chrome : stores.Firefox;
+
+                const heroLink = document.getElementById('storeLink_hero');
+                heroLink.href = otherStore.url;
+                heroLink.textContent = `Also on ${otherStore.label} ›`;
+
+                const ctaPrimary = document.getElementById('storeButton_primary');
+                ctaPrimary.href = currentStore.url;
+                ctaPrimary.textContent = currentStore.label;
+
+                const ctaSecondary = document.getElementById('storeButton_secondary');
+                ctaSecondary.href = otherStore.url;
+                ctaSecondary.textContent = otherStore.label;
+            }
+
             const browser = getBrowser();
             const storeURL = getStoreURL(browser);
             setInstallButton(browser, storeURL, installButton1);
             setInstallButton(browser, storeURL, installButton2);
+            setStoreLinks(browser);
 
             fetch('https://api.github.com/repos/JC144/TabDockExtension/releases/latest')
                 .then(response => response.ok ? response.json() : Promise.reject())
