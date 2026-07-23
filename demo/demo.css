@@ -1,0 +1,80 @@
+/* The fake web page living inside the hero iframe, behind the dock. Slightly
+   tinted so the dock's translucent blur reads against it. */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:
+        radial-gradient(1000px 400px at 80% -10%, rgba(0, 113, 227, 0.10), transparent 60%),
+        radial-gradient(800px 400px at 10% 110%, rgba(175, 82, 222, 0.08), transparent 60%),
+        #f5f5f7;
+}
+
+.fake-page {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 48px 0;
+}
+
+.fake-content {
+    width: 100%;
+    max-width: 560px;
+}
+
+.skeleton {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.07);
+}
+
+.skeleton-title {
+    width: 45%;
+    height: 22px;
+    margin-bottom: 18px;
+}
+
+.skeleton-line {
+    height: 12px;
+    margin-bottom: 12px;
+}
+
+.skeleton-line.short {
+    width: 65%;
+}
+
+.demo-hint {
+    margin: 26px 0 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    text-align: center;
+    user-select: none;
+}
+
+#demo-reset {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 10002;
+    padding: 5px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 980px;
+    background: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.55);
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+#demo-reset:hover {
+    opacity: 1;
+    background: #ffffff;
+}

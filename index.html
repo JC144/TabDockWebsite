@@ -149,7 +149,9 @@
                 <span class="browser-dot"></span>
                 <span class="browser-dot"></span>
             </div>
-            <video autoplay loop muted playsinline width="800" height="240">
+            <iframe class="demo-frame" src="demo/index.html" title="Interactive Tab Dock demo"
+                loading="eager"></iframe>
+            <video class="demo-fallback" loop muted playsinline preload="none" width="800" height="240">
                 <source src="img/Dock.webm" type="video/webm">
                 <source src="img/Dock.mp4" type="video/mp4">
             </video>
@@ -268,6 +270,21 @@
         document.addEventListener('DOMContentLoaded', function () {
             const installButton1 = document.getElementById('installButton_header');
             const installButton2 = document.getElementById('installButton_bottom');
+
+            // The demo video only shows where the interactive demo is hidden
+            // (small/touch screens, cf. the .demo-fallback media query); play it
+            // there only so desktop never downloads it.
+            const fallbackVideo = document.querySelector('.demo-fallback');
+            const wantsFallback = window.matchMedia('(max-width: 720px), (hover: none)');
+            function syncFallbackVideo() {
+                if (wantsFallback.matches) {
+                    fallbackVideo.play().catch(function () { });
+                } else {
+                    fallbackVideo.pause();
+                }
+            }
+            syncFallbackVideo();
+            wantsFallback.addEventListener('change', syncFallbackVideo);
 
             function getBrowser() {
                 const userAgent = navigator.userAgent;

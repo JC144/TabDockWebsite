@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Tab Dock interactive demo</title>
+    <!-- Light-DOM rules for #dock / #dock-trash: in the extension this sheet is
+         injected by the manifest; here the <link> plays that role. The shadow
+         root fetches its own copy (Dock.js). -->
+    <link rel="stylesheet" href="dock-styles.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+    <main class="fake-page">
+        <div class="fake-content">
+            <div class="skeleton skeleton-title"></div>
+            <div class="skeleton skeleton-line"></div>
+            <div class="skeleton skeleton-line"></div>
+            <div class="skeleton skeleton-line short"></div>
+        </div>
+        <p class="demo-hint">This is the real dock, live &mdash; hover it, drag icons, close tabs.</p>
+    </main>
+    <button id="demo-reset" type="button" title="Restore the demo tabs">&#8635; Reset demo</button>
+    <script type="module" src="demo.js"></script>
+</body>
+
+</html>

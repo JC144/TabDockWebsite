@@ -173,7 +173,7 @@ a:hover {
     font-size: 17px;
 }
 
-/* Browser frame around the demo video */
+/* Browser frame around the interactive demo */
 
 .browser-frame {
     max-width: 980px;
@@ -200,10 +200,29 @@ a:hover {
     background: #d9d9de;
 }
 
-.browser-frame video {
+/* Interactive demo on desktop; the video takes over on small/touch screens
+   where the dock's hover interactions can't work. */
+.demo-frame {
     display: block;
     width: 100%;
+    height: 360px;
+    border: 0;
+}
+
+.demo-fallback {
+    display: none;
+    width: 100%;
     height: auto;
+}
+
+@media (max-width: 720px), (hover: none) {
+    .demo-frame {
+        display: none;
+    }
+
+    .demo-fallback {
+        display: block;
+    }
 }
 
 /* Sections */
