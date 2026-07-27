@@ -13,7 +13,7 @@
 
 ## Pages
 
-- [Official website](https://jc.vasselon.com/TabDockWebsite/): overview, features, how it works, install links
+- [Official website](https://tabdock.org/): overview, features, how it works, install links
 - [Source code](https://github.com/JC144/TabDockExtension): README and releases
 - [Chrome Web Store listing](https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc): install for Chrome, Edge, Brave
 - [Firefox Add-on listing](https://addons.mozilla.org/en-US/firefox/addon/tab-dock/): install for Firefox
