@@ -40,7 +40,7 @@
       "description": "Tab Dock collects nothing. Everything stays in your browser, on your computer.",
       "isPartOf": { "@id": "https://tabdock.org/#website" },
       "about": { "@id": "https://tabdock.org/#software" },
-      "dateModified": "2026-10-02",
+      "dateModified": "2026-10-03",
       "inLanguage": "en"
     }
     </script>
@@ -72,21 +72,30 @@
             <p>To draw the dock, Tab Dock keeps a list of your open tabs, grouped by website:</p>
             <ul>
                 <li>the address (URL) and title of each open tab, and which window it belongs to;</li>
-                <li>the icon of each website in the dock;</li>
-                <li>your dock preferences, such as whether it sits at the top or bottom of the window and the
-                    order of its icons.</li>
+                <li>the icon of each website in the dock.</li>
             </ul>
-            <p>This list lives in the browser&rsquo;s local extension storage on your device. It is not synced
-                to your browser account, it is never sent anywhere, and it is deleted when you uninstall Tab Dock.
-                Tab Dock does not keep a browsing history: when you close a tab, it disappears from the list.</p>
+            <p>This list is held in the browser&rsquo;s memory and is not written to your disk: it is erased when
+                you close the browser. Tab Dock does not keep a browsing history: when you close a tab, it
+                disappears from the list.</p>
+            <p>Only your dock preferences are saved on your device, so that they survive a restart:</p>
+            <ul>
+                <li>whether the dock sits at the top or bottom of the window;</li>
+                <li>the order of its icons, saved as the names of the websites currently in your dock (for
+                    example, github.com), without any page address or title.</li>
+            </ul>
+            <p>These preferences live in the extension&rsquo;s own private storage, which websites cannot read.
+                Nothing is synced to your browser account, nothing is ever sent anywhere, and everything is
+                deleted when you uninstall Tab Dock.</p>
+            <p>Tab Dock does not run in private (incognito) windows.</p>
 
             <h2>What the extension sends</h2>
             <p>Nothing, to me or to anyone else. Tab Dock has no telemetry, no crash reporting, and no remote
                 server to send data to.</p>
             <p>One technical detail, for completeness: to show website icons, Chrome, Edge and Brave use the
                 browser&rsquo;s own built-in icon cache. Firefox has no such cache for extensions, so there Tab Dock
-                downloads each icon from the address the website itself declares, without cookies. That request
-                goes to the website you already have open, never to Tab Dock.</p>
+                downloads each icon from the address the website itself declares, without cookies. It is the same
+                icon your browser already loads for the tab bar, and the request goes to wherever the website
+                hosts it, never to Tab Dock.</p>
 
             <h2>Why it asks for these permissions</h2>
             <dl class="prose-list">
@@ -96,10 +105,15 @@
                 <dt>Access to all websites</dt>
                 <dd>The dock is displayed on top of every page you visit, so the extension has to be allowed to run
                     on every site. It only adds the dock to the page: it does not read, collect or change the
-                    page&rsquo;s content. Your browser shows this permission as &ldquo;read and change all your data
-                    on all websites&rdquo; because it cannot express anything narrower.</dd>
+                    page&rsquo;s content. To draw it, the dock on a page receives the website names, titles and
+                    icons of the tabs open in the same window, never their addresses, and it is kept isolated
+                    from the page&rsquo;s own scripts. Your browser shows this permission as &ldquo;read and
+                    change all your data on all websites&rdquo; because it cannot express anything narrower. On
+                    Firefox, this permission is also what allows Tab Dock to download website icons.</dd>
                 <dt>Storage</dt>
-                <dd>To keep the tab list and your preferences described above, locally.</dd>
+                <dd>On Chrome, Edge and Brave, to hold the tab list described above in memory for the browser
+                    session. On Firefox, only to erase what older versions of Tab Dock had saved. Your dock
+                    preferences use the extension&rsquo;s own private database, which needs no permission.</dd>
                 <dt>Favicons <span class="prose-note">(Chrome, Edge, Brave)</span></dt>
                 <dd>To display website icons from the browser&rsquo;s cache.</dd>
             </dl>
