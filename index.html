@@ -75,6 +75,7 @@
             "@type": "ImageObject",
             "url": "https://tabdock.org/img/social-preview.png"
           },
+          "dateModified": "2026-10-02",
           "inLanguage": "en"
         },
         {
@@ -118,10 +119,11 @@
 <body>
     <nav class="nav">
         <div class="nav-inner">
-            <a href="#" class="nav-logo">Tab Dock</a>
+            <a href="/" class="nav-logo">Tab Dock</a>
             <div class="nav-links">
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#how" class="nav-link">How it works</a>
+                <a href="#faq" class="nav-link">FAQ</a>
                 <a href="https://github.com/JC144/TabDockExtension" class="nav-link" target="_blank"
                     rel="noopener">GitHub</a>
                 <a id="installButton_header" class="btn-primary btn-nav"
@@ -134,7 +136,8 @@
     <header class="hero">
         <p class="hero-eyebrow">Free &amp; open source</p>
         <h1>A dock for your browser tabs.</h1>
-        <p class="hero-subtitle">Tab Dock groups your open tabs by website into a macOS-style dock.
+        <p class="hero-subtitle">Tab Dock is a free tab manager that groups your open tabs by website into a
+            macOS-style dock.
             <br/>Available for Chrome, Firefox, Edge, and Brave.</p>
         <div class="hero-actions">
             <a id="installButton_bottom" class="btn-primary"
@@ -204,13 +207,44 @@
                     <div class="feature-card">
                         <div class="feature-glyph">&#9679;</div>
                         <h3>No tracking</h3>
-                        <p>Everything stays on your computer. Nothing leaves your browser.</p>
+                        <p>Everything stays on your computer. Nothing leaves your browser, and there is no account to
+                            create.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="how" class="section section-alt">
+        <section id="use-cases" class="section section-alt">
+            <div class="section-inner">
+                <h2>Who is Tab Dock for?</h2>
+                <p class="section-subtitle">Anyone who keeps more tabs open than the tab bar can show.</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>Google Suit users</h3>
+                        <p>Two Gmail inboxes, a work calendar and a personal one, three Google Docs.<br/>
+                            Tab Dock puts
+                            every tab from the same site under one icon like your computer would do. Every documents under a Google Doc icon, every inboxes under a GMail icon.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Researchers with 40+ tabs</h3>
+                        <p>Twelve Wikipedia pages, a stack of PDFs, half a dozen papers, and the article you set aside
+                            for later. Nothing gets closed or archived, some links are opened twice.<br/>
+                            With TabDock, your tabs stay open and live, grouped by
+                            source. Open the dock to scan what you have, jump to the tab you need, and close the rest
+                            when you are done.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Developers testing across environments</h3>
+                        <p>Localhost, staging, and production each get their own icon, so you always know which
+                            environment you are looking at before you click. Documentation, the issue tracker, and
+                            the CI dashboard group themselves too. Drag the icons to reorder them, and pin the dock
+                            to the top if your dev tools live at the bottom.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="section">
             <div class="steps-inner">
                 <h2>How it works</h2>
                 <div class="steps">
@@ -218,14 +252,16 @@
                         <div class="step-number">1</div>
                         <div class="step-body">
                             <h3>Hover to expand</h3>
-                            <p>Move your mouse to the bottom of the window to reveal the dock.</p>
+                            <p>Move your mouse to the bottom of the window to reveal the dock. Prefer it at the top?
+                                Drag the grip and the dock snaps to the top edge.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
                         <div class="step-body">
                             <h3>Group and navigate</h3>
-                            <p>Each icon represents a web application. Hover to see its open tabs, click to switch.</p>
+                            <p>Each icon represents a web application. Hover to see its open tabs, click to switch.
+                                Drag the icons to reorder them; Tab Dock remembers the order.</p>
                         </div>
                     </div>
                     <div class="step">
@@ -240,7 +276,55 @@
             </div>
         </section>
 
-        <section id="get-started" class="section cta">
+        <section id="privacy" class="section section-alt narrative">
+            <div class="narrative-inner narrative-left">
+                <h2>Permissions &amp; privacy</h2>
+                <p>Tab Dock asks for four permissions.</p>
+                <ol>
+                    <li><strong>Your tabs</strong>, to list their titles and icons and to switch or close them when you click.</li>
+                    <li><strong>Every website</strong>, because the dock is drawn on top of each page you visit. It only adds the dock there and reads nothing from the page.</li>
+                    <li><strong>Local storage</strong>, to remember your tab list, the dock position, and the icon order on your own device.</li>
+                    <li><strong>Browser&rsquo;s icon cache</strong>, to show website logos.</li>
+                </ol>
+                <p>Nothing is sent anywhere: no account, no analytics, no server.<br/>
+                The <a href="/privacy">privacy policy</a> has the full details, and every line of code is on
+                    <a href="https://github.com/JC144/TabDockExtension" target="_blank" rel="noopener">GitHub</a>.</p>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="qa-inner">
+                <h2>Common questions</h2>
+
+                <h3>Is Tab Dock free?</h3>
+                <p>Yes. Tab Dock is free and open source, with no paid tier, no trial, and no account. It is
+                    published on the Chrome Web Store and Firefox Add-ons, and the full source code is on GitHub
+                    under the GPL&nbsp;v3 license. If it saves you time you can leave a tip, but nothing is locked
+                    behind it.</p>
+
+                <h3>Which browsers does Tab Dock work in?</h3>
+                <p>Tab Dock works in Chrome, Edge, Brave, and Firefox. On Chromium browsers, including Edge and
+                    Brave, you install it from the Chrome Web Store. On Firefox, you install it from Firefox
+                    Add-ons. It is a desktop extension, since the dock relies on hovering with a mouse.</p>
+
+                <h3>How is Tab Dock different from OneTab?</h3>
+                <p>OneTab closes your tabs and saves them as a list to free up memory. Tab Dock takes the other
+                    approach: your tabs stay open, and the dock gives you a clear way to move between them, grouped
+                    by website. OneTab parks tabs for later. Tab Dock helps you keep working with them.</p>
+
+                <h3>Does it work with Chrome tab groups?</h3>
+                <p>Yes. Tab Dock does not touch Chrome&rsquo;s tab groups, so any groups you have made in the tab
+                    bar stay exactly as they are. The dock groups tabs by website on its own, automatically, and
+                    shows them on top of the page. You can use both at the same time.</p>
+
+                <h3>Does it work across multiple windows?</h3>
+                <p>Each browser window gets its own dock, showing only the tabs open in that window. That keeps the
+                    dock short and relevant to what you are doing there. Your dock position and icon order are
+                    shared, so the dock looks the same in every window.</p>
+            </div>
+        </section>
+
+        <section id="get-started" class="section section-alt cta">
             <h2>Bring a dock to your browser.</h2>
             <div class="cta-actions">
                 <a id="storeButton_primary" class="btn-primary"

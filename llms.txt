@@ -13,7 +13,7 @@
 
 ## Pages
 
-- [Official website](https://tabdock.org/): overview, features, how it works, install links
+- [Official website](https://tabdock.org/): what it is, who it is for, features, how it works, permissions & privacy, FAQ, install links
 - [Privacy policy](https://tabdock.org/privacy): what the extension stores (locally only) and why it needs its permissions
 - [Source code](https://github.com/JC144/TabDockExtension): README and releases
 - [Chrome Web Store listing](https://chromewebstore.google.com/detail/tab-dock/oahhjigfompaplkgjcpjccklggmamepc): install for Chrome, Edge, Brave

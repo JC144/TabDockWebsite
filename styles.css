@@ -275,6 +275,67 @@ a:hover {
     text-wrap: pretty;
 }
 
+/* Long-form narrative blocks (overview, permissions) read better left-aligned */
+.narrative-left {
+    text-align: left;
+}
+
+.narrative-left h2 {
+    text-align: left;
+}
+
+.narrative-inner h3 {
+    margin: 44px 0 0;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+/* Lists in narrative blocks share the paragraph style */
+.narrative-inner ol,
+.narrative-inner ul {
+    margin: 14px 0 0;
+    padding-left: 26px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    text-wrap: pretty;
+}
+
+.narrative-inner li + li {
+    margin-top: 8px;
+}
+
+.narrative-inner strong {
+    color: var(--text-color);
+}
+
+/* Q&A */
+
+.qa-inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.qa-inner h2 {
+    margin-bottom: 16px;
+}
+
+.qa-inner h3 {
+    margin: 44px 0 0;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.qa-inner p {
+    margin: 8px 0 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    text-wrap: pretty;
+}
+
 /* Features */
 
 .feature-grid {
