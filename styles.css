@@ -398,6 +398,87 @@ a:hover {
     color: var(--text-secondary);
 }
 
+/* Prose (privacy page) */
+
+.prose {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.prose h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+/* article. outranks .section h2, including its mobile override */
+article.prose h2 {
+    margin: 48px 0 0;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.prose p,
+.prose ul {
+    margin: 14px 0 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    text-wrap: pretty;
+}
+
+.prose ul {
+    padding-left: 22px;
+}
+
+.prose li + li {
+    margin-top: 6px;
+}
+
+.prose strong {
+    color: var(--text-color);
+}
+
+.prose .prose-meta {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-tertiary);
+}
+
+.prose .prose-lead {
+    margin-top: 28px;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+.prose-list {
+    margin: 14px 0 0;
+}
+
+.prose-list dt {
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.prose-list dd {
+    margin: 4px 0 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    text-wrap: pretty;
+}
+
+.prose-note {
+    font-weight: 400;
+    color: var(--text-tertiary);
+}
+
 /* Footer */
 
 .footer {
@@ -469,6 +550,10 @@ a:hover {
     }
 
     .cta h2 {
+        font-size: 36px;
+    }
+
+    .prose h1 {
         font-size: 36px;
     }
 }

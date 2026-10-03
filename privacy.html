@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Tab Dock</title>
+    <link rel="canonical" href="https://tabdock.org/privacy">
+
+    <!-- Favicon settings -->
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Primary Meta Tags -->
+    <meta name="description"
+        content="Tab Dock collects nothing. No account, no analytics, no servers: your tab list stays in your browser, on your computer. Here is exactly what the extension stores and why it needs its permissions.">
+    <meta name="author" content="Jean-Christophe VASSELON">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tabdock.org/privacy">
+    <meta property="og:title" content="Privacy Policy – Tab Dock">
+    <meta property="og:description"
+        content="Tab Dock collects nothing. Everything stays in your browser, on your computer.">
+    <meta property="og:image" content="https://tabdock.org/img/social-preview.png">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://tabdock.org/privacy#webpage",
+      "url": "https://tabdock.org/privacy",
+      "name": "Privacy Policy – Tab Dock",
+      "description": "Tab Dock collects nothing. Everything stays in your browser, on your computer.",
+      "isPartOf": { "@id": "https://tabdock.org/#website" },
+      "about": { "@id": "https://tabdock.org/#software" },
+      "dateModified": "2026-10-02",
+      "inLanguage": "en"
+    }
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">Tab Dock</a>
+            <div class="nav-links">
+                <a href="/#features" class="nav-link">Features</a>
+                <a href="/#how" class="nav-link">How it works</a>
+                <a href="https://github.com/JC144/TabDockExtension" class="nav-link" target="_blank"
+                    rel="noopener">GitHub</a>
+                <a class="btn-primary btn-nav" href="/#get-started">Get Tab Dock</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="section">
+        <article class="prose">
+            <h1>Privacy Policy</h1>
+            <p class="prose-meta">Last updated: October 2, 2026</p>
+
+            <p class="prose-lead"><strong>Tab Dock collects nothing.</strong> There is no account, no analytics,
+                no ads, and no server. Everything the extension needs stays in your browser, on your computer.</p>
+
+            <h2>What the extension stores</h2>
+            <p>To draw the dock, Tab Dock keeps a list of your open tabs, grouped by website:</p>
+            <ul>
+                <li>the address (URL) and title of each open tab, and which window it belongs to;</li>
+                <li>the icon of each website in the dock;</li>
+                <li>your dock preferences, such as whether it sits at the top or bottom of the window and the
+                    order of its icons.</li>
+            </ul>
+            <p>This list lives in the browser&rsquo;s local extension storage on your device. It is not synced
+                to your browser account, it is never sent anywhere, and it is deleted when you uninstall Tab Dock.
+                Tab Dock does not keep a browsing history: when you close a tab, it disappears from the list.</p>
+
+            <h2>What the extension sends</h2>
+            <p>Nothing, to me or to anyone else. Tab Dock has no telemetry, no crash reporting, and no remote
+                server to send data to.</p>
+            <p>One technical detail, for completeness: to show website icons, Chrome, Edge and Brave use the
+                browser&rsquo;s own built-in icon cache. Firefox has no such cache for extensions, so there Tab Dock
+                downloads each icon from the address the website itself declares, without cookies. That request
+                goes to the website you already have open, never to Tab Dock.</p>
+
+            <h2>Why it asks for these permissions</h2>
+            <dl class="prose-list">
+                <dt>Read your tabs</dt>
+                <dd>To list the title, address and icon of your open tabs in the dock, and to switch to, open or
+                    close a tab when you click it.</dd>
+                <dt>Access to all websites</dt>
+                <dd>The dock is displayed on top of every page you visit, so the extension has to be allowed to run
+                    on every site. It only adds the dock to the page: it does not read, collect or change the
+                    page&rsquo;s content. Your browser shows this permission as &ldquo;read and change all your data
+                    on all websites&rdquo; because it cannot express anything narrower.</dd>
+                <dt>Storage</dt>
+                <dd>To keep the tab list and your preferences described above, locally.</dd>
+                <dt>Favicons <span class="prose-note">(Chrome, Edge, Brave)</span></dt>
+                <dd>To display website icons from the browser&rsquo;s cache.</dd>
+            </dl>
+
+            <h2>Sharing and selling</h2>
+            <p>Tab Dock does not share, sell or transfer any data to third parties, because it has none to share.</p>
+
+            <h2>This website</h2>
+            <p>tabdock.org sets no cookies and uses no analytics or trackers. It is hosted on GitHub Pages, and
+                GitHub may log technical information such as your IP address for security purposes (see the
+                <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                    target="_blank" rel="noopener">GitHub Privacy Statement</a>). To show the latest version number,
+                the homepage asks GitHub&rsquo;s public API for it, so your browser connects to api.github.com.</p>
+            <p>The install buttons take you to the Chrome Web Store or Firefox Add-ons, which have their own
+                privacy policies.</p>
+
+            <h2>Don&rsquo;t take my word for it</h2>
+            <p>Tab Dock is open source. You can read every line of the extension on
+                <a href="https://github.com/JC144/TabDockExtension" target="_blank" rel="noopener">GitHub</a>.</p>
+
+            <h2>Changes</h2>
+            <p>If this policy ever changes, the new version will be published on this page with an updated
+                date.</p>
+
+            <h2>Contact</h2>
+            <p>Questions? Open an issue on
+                <a href="https://github.com/JC144/TabDockExtension/issues" target="_blank" rel="noopener">GitHub</a>
+                or reach me on <a href="https://www.linkedin.com/in/jvasselon/" target="_blank"
+                    rel="noopener">LinkedIn</a>.</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span>Built with love by <a href="https://www.linkedin.com/in/jvasselon/" target="_blank"
+                    rel="noopener">Jean-Christophe Vasselon</a></span>
+            <div class="footer-links">
+                <a href="/privacy">Privacy</a>
+                <a href="https://github.com/JC144/TabDockExtension" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.producthunt.com/products/tab-dock" target="_blank" rel="noopener">Product Hunt</a>
+                <a href="https://tab-dock.en.softonic.com/chrome/extension" target="_blank"
+                    rel="noopener">Softonic</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
